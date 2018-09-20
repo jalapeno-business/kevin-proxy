@@ -1,0 +1,59 @@
+@media (min-width: 500) {
+  .app {
+    background-color: #f1f1f2;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 300px auto auto auto auto;
+    grid-gap: 2em;
+    padding: 3em;
+    grid-template-areas: 
+    "header"
+    "zagat"
+    "sidebar"
+    "publication"
+    "reviews"
+    "footer"
+  }
+}  
+
+@media (min-width: 900px) {
+  .app {
+    background-color: #f1f1f2;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto 300px auto auto auto;
+    grid-gap: 2em;
+    padding: 3em;
+    grid-template-areas: 
+    "header header header"
+    "zagat zagat sidebar"
+    "publication publication sidebar"
+    "reviews reviews sidebar"
+    "footer footer footer";
+  }
+}
+
+
+.carousel {
+  grid-area: header;
+}
+
+.zagat {
+  grid-area: zagat;
+}
+
+.publication {
+  grid-area: publication;
+}
+
+.info {
+  grid-area: sidebar;
+}
+
+.suggestions {
+  grid-area: footer;
+}
+
+.reviews {
+  grid-area: reviews;
+}
