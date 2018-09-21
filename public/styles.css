@@ -1,41 +1,60 @@
+
 @media (min-width: 500) {
-  .app {
+  #zagat-app {
     background-color: #f1f1f2;
+    padding-top: 5.5vw;
+    grid-area: body;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto 300px auto auto auto auto;
-    grid-gap: 2em;
-    padding: 3em;
+    grid-template-rows: repeat(8 auto);
     grid-template-areas: 
-    "header"
+    "navbar"
+    "carousel"
     "zagat"
     "sidebar"
     "publication"
     "reviews"
+    "suggestions"
     "footer"
   }
 }  
 
 @media (min-width: 900px) {
-  .app {
+  #zagat-app {
     background-color: #f1f1f2;
+    padding-top: 5.5vw;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto 300px auto auto auto;
-    grid-gap: 2em;
-    padding: 3em;
+    grid-template-rows: repeat(7 auto);
     grid-template-areas: 
-    "header header header"
+    "navbar navbar navbar"
+    "carousel carousel carousel"
     "zagat zagat sidebar"
     "publication publication sidebar"
     "reviews reviews sidebar"
+    "suggestions suggestions suggestions"
     "footer footer footer";
   }
 }
 
+.zagat-img {
+  width: 100%;
+}
+
+.zagat-details {
+  margin: 2em 0em 0em 2em;
+}
+
+#zagat-bar {
+  grid-area: navbar;
+  position: fixed;
+  top: 0px;
+  z-index: 1;
+}
 
 #zagat-carousel {
-  grid-area: header;
+  width: 100%;
+  grid-area: carousel;
 }
 
 #zagat-description {
@@ -48,12 +67,18 @@
 
 #zagat-info {
   grid-area: sidebar;
+  margin: 0em 2em;
 }
 
 #zagat-suggestions {
-  grid-area: footer;
+  grid-area: suggestions;
+  margin-right: 2em;
 }
 
 #zagat-reviews {
   grid-area: reviews;
+}
+
+#zagat-footer {
+  grid-area: footer;
 }

@@ -3,33 +3,47 @@
 
 <head>
   <meta charset="UTF-8">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" rel="stylesheet" type="text/css" />
   <link href="./styles.css" rel="stylesheet" type="text/css" />
+  <link href="./header.css" rel="stylesheet" type="text/css" />
   <title>Zagat.com</title>
 </head>
 
 <body>
 
-</html>
-<div class="app">
-  <div id="zagat-info">
-    <!-- info -->
-  </div>
-  <div id="zagat-suggestions">
-    <!-- suggestions -->
-  </div>
-  <div id="zagat-description">
-    <!-- zagat -->
+
+
+<div id="zagat-app">
+  <div id="zagat-bar">
+    <!-- navbar -->
+    <img class="zagat-img" src="https://s3.us-east-2.amazonaws.com/zagat-fec/zagatBar.png" alt="zagat-bar">
   </div>
   <div id="zagat-carousel">
     <!-- carousel -->
   </div>
-  <div id="zagat-recommendations">
+  <div id="zagat-info">
+    <!-- info -->
+  </div>
+  <div class="zagat-details" id="zagat-suggestions">
+    <!-- suggestions -->
+  </div>
+  <div class="zagat-details" id="zagat-description">
+    <!-- description -->
+    <img class="zagat-img" src="https://s3.us-east-2.amazonaws.com/zagat-fec/zagatDescription.png" alt="zagat-description">
+  </div>
+  <div class="zagat-details" id="zagat-recommendations">
     <!-- publications -->
   </div>
-  <div id="zagat-reviews">
+  <div class="zagat-details" id="zagat-reviews">
     <!-- reviews -->
   </div>
+  <div id="zagat-footer">
+    <!-- footer -->
+    <img class="zagat-img" src="https://s3.us-east-2.amazonaws.com/zagat-fec/zagatFooter.png" alt="zagat-footer">
+  </div>
+
 </div>
+
 <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
 <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
 <script src="https://s3.us-east-2.amazonaws.com/fec-zagat/reviews.js" crossorigin></script>
@@ -37,28 +51,7 @@
 <script src="https://s3.us-east-2.amazonaws.com/zagat-fec/suggestionsBundle.js" crossorigin></script>
 <script src="https://s3-us-west-1.amazonaws.com/zagat-carousel/bundle.js" crossorigin></script> 
 <!-- <script src="https://s3.amazonaws.com/zagatrecommendations/bundle.js" crossorigin></script> -->
-<script>
-  ReactDOM.render(
-    React.createElement(Reviews),
-    document.getElementById('zagat-reviews')
-  );
-  ReactDOM.render(
-    React.createElement(Info),
-    document.getElementById('zagat-info')
-  );
-  ReactDOM.render(
-    React.createElement(Suggestions),
-    document.getElementById('zagat-suggestions')
-  );
-  ReactDOM.render(
-    React.createElement(Carousel),
-    document.getElementById('zagat-carousel')
-  );
-  // ReactDOM.render(
-  //   React.createElement(Recommendations),
-  //   document.getElementById('zagat-recommendations')
-  // );
-</script>
+
 </body>
 
 </html>
