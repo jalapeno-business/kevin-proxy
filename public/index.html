@@ -11,22 +11,22 @@
 
 </html>
 <div class="app">
-  <div class="info" id="Info">
+  <div id="zagat-info">
     <!-- info -->
   </div>
-  <div class="suggestions" id="Suggestions">
+  <div id="zagat-suggestions">
     <!-- suggestions -->
   </div>
-  <div class="zagat">
+  <div id="zagat-description">
     <!-- zagat -->
   </div>
-  <div class="carousel" id="Carousel">
+  <div id="zagat-carousel">
     <!-- carousel -->
   </div>
-  <div class="publication" id="Recommendations">
+  <div id="zagat-recommendations">
     <!-- publications -->
   </div>
-  <div class="reviews" id="Reviews">
+  <div id="zagat-reviews">
     <!-- reviews -->
   </div>
 </div>
@@ -35,29 +35,29 @@
 <script src="https://s3.us-east-2.amazonaws.com/fec-zagat/reviews.js" crossorigin></script>
 <script src="https://s3.us-east-2.amazonaws.com/zagat-fec/bundle.js" crossorigin></script>
 <script src="https://s3.us-east-2.amazonaws.com/zagat-fec/suggestionsBundle.js" crossorigin></script>
-<script src="https://s3-us-west-1.amazonaws.com/zagat-carousel/bundle.js" crossorigin></script>
-<script src="https://s3.amazonaws.com/zagatrecommendations/bundle.js" crossorigin></script>
+<script src="https://s3-us-west-1.amazonaws.com/zagat-carousel/bundle.js" crossorigin></script> 
+<!-- <script src="https://s3.amazonaws.com/zagatrecommendations/bundle.js" crossorigin></script> -->
 <script>
   ReactDOM.render(
     React.createElement(Reviews),
-    document.getElementById('Reviews')
+    document.getElementById('zagat-reviews')
   );
   ReactDOM.render(
     React.createElement(Info),
-    document.getElementById('Info')
+    document.getElementById('zagat-info')
   );
   ReactDOM.render(
     React.createElement(Suggestions),
-    document.getElementById('Suggestions')
+    document.getElementById('zagat-suggestions')
   );
   ReactDOM.render(
     React.createElement(Carousel),
-    document.getElementById('Carousel')
+    document.getElementById('zagat-carousel')
   );
-  ReactDOM.render(
-    React.createElement(Recommendations),
-    document.getElementById('Recommendations')
-  );
+  // ReactDOM.render(
+  //   React.createElement(Recommendations),
+  //   document.getElementById('zagat-recommendations')
+  // );
 </script>
 </body>
 

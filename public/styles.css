@@ -34,26 +34,26 @@
 }
 
 
-.carousel {
+#zagat-carousel {
   grid-area: header;
 }
 
-.zagat {
+#zagat-description {
   grid-area: zagat;
 }
 
-.publication {
+#zagat-recommendations {
   grid-area: publication;
 }
 
-.info {
+#zagat-info {
   grid-area: sidebar;
 }
 
-.suggestions {
+#zagat-suggestions {
   grid-area: footer;
 }
 
-.reviews {
+#zagat-reviews {
   grid-area: reviews;
 }
