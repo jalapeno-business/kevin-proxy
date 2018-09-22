@@ -1,3 +1,12 @@
+@font-face {
+  font-family: "Calibre-Regular";
+  src: url("https://s3.us-east-2.amazonaws.com/zagat-fec/Calibre-Regular.woff") format("woff")
+}
+
+body {
+  font-family: 'Calibre-Regular';
+  font: 15px/20px 'Calibre-Regular';
+}
 
 @media (min-width: 500) {
   #zagat-app {
@@ -6,7 +15,7 @@
     grid-area: body;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(8 auto);
+    grid-template-rows: repeat(8, auto);
     grid-template-areas: 
     "navbar"
     "carousel"
@@ -25,7 +34,7 @@
     padding-top: 5.5vw;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: repeat(7 auto);
+    grid-template-rows: repeat(7, auto);
     grid-template-areas: 
     "navbar navbar navbar"
     "carousel carousel carousel"
