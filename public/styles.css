@@ -68,6 +68,7 @@ body {
 
 #zagat-description {
   grid-area: zagat;
+  max-width: 1064px;
 }
 
 #zagat-recommendations {

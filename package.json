@@ -12,10 +12,12 @@
     "start-dev": "nodemon proxy/server.js"
   },
   "dependencies": {
-    "express": "^4.16.3"
+    "express": "^4.16.3",
+    "grunt-run": "^0.8.1"
   },
   "devDependencies": {
     "grunt": "^1.0.3",
+    "grunt-contrib-cssmin": "^3.0.0",
     "uglifyjs-webpack-plugin": "^2.0.1"
   }
 }
