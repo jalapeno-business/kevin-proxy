@@ -43,6 +43,10 @@ body {
     "suggestions suggestions suggestions"
     "footer footer footer";
   }
+
+  .zagat-details {
+    margin: 2em 0em 0em 2em;
+  }
 }
 
 .zagat-img {
@@ -50,7 +54,7 @@ body {
 }
 
 .zagat-details {
-  margin: 2em 0em 0em 2em;
+  margin: 2em 2em 0em 2em;
 }
 
 #zagat-bar {
