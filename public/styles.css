@@ -8,11 +8,10 @@ body {
   font: 15px/20px 'Calibre-Regular';
 }
 
-@media (min-width: 500) {
+@media (min-width: 300px) {
   #zagat-app {
     background-color: #f1f1f2;
     padding-top: 5.5vw;
-    grid-area: body;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(8, auto);
