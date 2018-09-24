@@ -1,6 +1,10 @@
 
 # Created by https://www.gitignore.io/api/node
 
+## MAC files ##
+.DS_Store
+
+
 ### Node ###
 # Logs
 logs
@@ -75,6 +79,10 @@ typings/
 
 # Serverless directories
 .serverless
+
+# others
+.gitignore
+.dockerignore
 
 
 # End of https://www.gitignore.io/api/node
